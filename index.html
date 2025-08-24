@@ -1,0 +1,233 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Douglas Chong — Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Douglas Chong — Senior Application Engineer. Projects, skills, and contact." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- HTML content here (navbar, hero, projects, skills, contact, footer) -->
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="brand" aria-label="Home">
+        <div class="logo" aria-hidden="true"></div>
+        <span>Douglas Chong</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="https://www.linkedin.com/in/douglaschk" target="_blank" rel="noreferrer">Connect</a>
+        <!-- <a class="btn secondary" href="#" id="downloadCV">Download CV</a> -->
+      </nav>
+      <button aria-label="Open menu" class="hamburger" id="hamburger">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+    <div class="container">
+      <div id="mobileMenu" class="mobile-menu" aria-label="Mobile">
+        <a href="#projects" onclick="toggleMenu(false)">Projects</a>
+        <a href="#skills" onclick="toggleMenu(false)">Skills</a>
+        <a href="https://www.linkedin.com/in/douglaschk" target="_blank" rel="noreferrer" onclick="toggleMenu(false)">Connect</a>
+        <!-- <a href="#" id="downloadCV2">Download CV</a> -->
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO / INTRO -->
+  <main id="home" class="container">
+    <section class="hero" aria-labelledby="intro-heading">
+      <div>
+        <span class="tag">Automation Engineer</span>
+        <h1 id="intro-heading">I build reliable, data-driven systems that simplify complexity and deliver measurable results
+        </h1>
+        <p class="sub">Transforming complexity into clarity • From Batching Plant automation to Smart Factories to AI-powered analytics, I turn requirements into scalable systems that deliver clear business outcomes</p>
+        <div class="chip-row" aria-label="Core stack">
+          <span class="chip">Project Management</span>
+          <span class="chip">Technical Engagement</span>
+          <span class="chip">Plant & Process Automation</span>
+          <span class="chip">ETL Framework</span>
+          <span class="chip">Data Analytics & Visualization</span>
+          <span class="chip">Application Development</span>
+        </div>
+        <div class="row">
+          <a class="btn" href="https://www.linkedin.com/in/douglaschk" target="_blank" rel="noreferrer">Let's Connect
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a class="btn link" href="#projects">See Projects</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <figure class="card-hero">
+          <img src="./images/Intro-Hero-1.png"
+            alt="Abstract code and dashboard montage" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" aria-labelledby="projects-heading">
+      <div class="section-head">
+        <h2 id="projects-heading">Featured Projects</h2>
+        <p>Real-world projects delivered in manufacturing, data analytics, and application development</p>
+      </div>
+      <div class="grid cols-3">
+        <!-- Card 1 -->
+        <article class="card">
+          <div class="media"><
+            <!-- span>📊</span> -->
+            <img src="./images/Plant-Automation.png">
+          </div>
+          <div class="body">
+            <div class="kicker">Automation • SCADA & HMI Development • Industrial Control Systems</div>
+            <h3>Concrete Batching Plant Automation</h3>
+            <p class="muted">Engineered and deployed a PLC-driven control system with HMI dashboards for real-time batching and monitoring, improving production accuracy, reducing manual intervention, and increasing plant reliability</p>
+            <div class="tags">
+              <span class="tag-sm">Solution implementation</span>
+              <span class="tag-sm">Process Optimization</span>
+              <span class="tag-sm">SQL</span>
+              <span class="tag-sm">ETL</span>
+              <span class="tag-sm">Relational Database Management</span>
+              <span class="tag-sm">Technical Support</span>
+            </div>
+            <!-- <div class="actions">
+              <a class="btn link" href="#" aria-label="View live demo">Live Demo</a>
+              <a class="btn link" href="#" aria-label="View source code">Source</a>
+            </div> -->
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="card">
+          <div class="media">
+            <!-- <span>🤖</span> -->
+             <img src="images/Power-Bi.png">
+          </div>
+          <div class="body">
+            <div class="kicker">Smart Factory • Semiconductor Automation</div>
+            <h3>Smart Factory Automation & IoT Integration</h3>
+            <p class="muted">Designed and implemented automation solutions in a semiconductor manufacturing environment, integrating IoT devices, process automation systems, and real-time data pipelines</p>
+            <div class="tags">
+              <span class="tag-sm">IoT</span>
+              <span class="tag-sm">C#</span>
+              <span class="tag-sm">Python</span>
+              <span class="tag-sm">REST API</span>
+              <span class="tag-sm">Angular</span>
+              <span class="tag-sm">Git</span>
+              <span class="tag-sm">Power BI</span>
+              <span class="tag-sm">Database</span>
+            </div>
+            <!-- <div class="actions">
+              <a class="btn link" href="#">Case Study</a>
+              <a class="btn link" href="#">Source</a>
+            </div> -->
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="card">
+          <div class="media">
+            <!-- <span>🧩</span> -->
+             <img src="images/Presentation.png">
+          </div>
+          <div class="body">
+            <div class="kicker">MATLAB • AI/ML Integration • Workflow Optimization</div>
+            <h3>AI & Model-Based Design Enablement for Industry & Research</h3>
+            <p class="muted">Delivered customized technical solutions and workshops, helping engineers and researchers adopt MATLAB and Simulink for AI, data analytics, and model-based design into their workflow</p>
+            <div class="tags">
+              <span class="tag-sm">MATLAB</span>
+              <span class="tag-sm">Simulink</span>
+              <span class="tag-sm">Model-Based Design</span>
+              <span class="tag-sm">AI/ML</span>
+              <span class="tag-sm">Data Analytics</span>
+              <span class="tag-sm">HPC Integration</span>
+            </div>
+            <!-- <div class="actions">
+              <a class="btn link" href="#">Screenshots</a>
+              <a class="btn link" href="#">Source</a>
+            </div> -->
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <div class="section-head">
+        <h2 id="skills-heading">Skills Overview</h2>
+        <p>Broad coverage from data to deployment.</p>
+      </div>
+      <div class="skills">
+        <div>
+          <div class="skill-list">
+            <div class="pill"><span>MATLAB</span>
+              <div class="meter"><i style="width:90%"></i></div>
+            </div>
+            <div class="pill"><span>Python</span>
+              <div class="meter"><i style="width:80%"></i></div>
+            </div>
+            <div class="pill"><span>C# | .NET</span>
+              <div class="meter"><i style="width:85%"></i></div>
+            </div>
+            <div class="pill"><span>T-SQL | PL/SQL</span>
+              <div class="meter"><i style="width:85%"></i></div>
+            </div>
+            <div class="pill"><span>Angular</span>
+              <div class="meter"><i style="width:75%"></i></div>
+            </div>
+            <div class="pill"><span>HTML | CSS | Javascript</span>
+              <div class="meter"><i style="width:88%"></i></div>
+            </div>
+            <div class="pill"><span>Power BI</span>
+              <div class="meter"><i style="width:88%"></i></div>
+            </div>
+            <div class="pill"><span>Bash</span>
+              <div class="meter"><i style="width:60%"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="exp-card">
+          <h3 style="margin-top:0">What I bring</h3>
+          <ul>
+            <li>End‑to‑end ownership from requirements to UAT and deployment.</li>
+            <li>Optimization and analytics that drive measurable impact.</li>
+            <li>Clear documentation, dashboards, and stakeholder communication.</li>
+          </ul>
+          <div class="spacer"></div>
+          <h4 style="margin:.2rem 0">Professional Certifications & Specialization</h4>
+          <div class="chip-row">
+            <span class="chip"><a href="https://coursera.org/share/9bee3f5535a65828244a7106b84a831b" target="_blank" rel="noreferrer">IBM AI Developer</a></span>
+            <span class="chip"><a href="https://coursera.org/share/fafc20fa5a3651aa2c6dd4e131c84964" target="_blank" rel="noreferrer">IBM AI Engineering</a></span>
+            <span class="chip"><a href="https://coursera.org/share/fbf809b7d13cc40d72068af7f207177e" target="_blank" rel="noreferrer">MATLAB Programming for Engineers and Scientist</a></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container row" style="justify-content:space-between">
+      <small>© <span id="year"></span> Douglas Chong. All rights reserved.</small>
+      <div class="row">
+        <a href="https://www.linkedin.com/in/douglaschk" target="_blank" rel="noreferrer">LinkedIn</a>
+        <span style="opacity:.4">•</span>
+        <a href="https://www.credly.com/users/douglas-chong-hong-kwan" target="_blank" rel="noreferrer">Credly Badge</a>
+        <span style="opacity:.4">•</span>
+        <a href="#home">Top</a>
+      </div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>
